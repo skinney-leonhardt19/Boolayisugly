@@ -3,8 +3,8 @@ RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
 def servomove(x):
     if x == 0:
-        RPL.servowrite(0, 0)
-        RPL.servowrite(1, 0)
+        RPL.servoWrite(0, 0)
+        RPL.servoWrite(1, 0)
     if x == 1:
         RPL.servoWrite(0, 2000)
         RPL.servoWrite(1, 1000)
