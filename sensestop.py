@@ -9,7 +9,7 @@ def servomove(x):
         RPL.servoWrite(0, 2000)
         RPL.servoWrite(1, 1000)
         
-RPL.pinMode(16, RPL.INPUT)
+RPL.pinMode(17, RPL.INPUT)
 
 if RPL.digitalRead(17) == 1:
         servomove(1)
