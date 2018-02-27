@@ -3,7 +3,7 @@ RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
 RPL.pinMode(17, RPL.INPUT)
 
-While RPL.digitalRead(16) == 0:
+While RPL.digitalRead(17) == 0:
     RPL.servoWrite(0, 0)
     RPL.servoWrite(1, 0)
     break
