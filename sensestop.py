@@ -4,7 +4,7 @@ RPL.RoboPiInit("/dev/ttyAMA0",115200)
 RPL.pinMode(17, RPL.INPUT)
 
 while True:
-    readSensor == RPLdigitalRead(17)
+    readSensor == RPL.digitalRead(17)
     if readSensor == 0:
         RPL.servoWrite(0, 0)
         RPL.servoWrite(1, 0)
