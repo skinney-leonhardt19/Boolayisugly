@@ -12,7 +12,7 @@ motorL == 0
 
 while True:
     sensorRead == RPL.digitalRead(17)
- global move == time.time 
+    move == time.time 
     if sensorRead == 1:
         RPL.servoWrite(0, 1000)
         RPL.servoWrite(1, 2000)
