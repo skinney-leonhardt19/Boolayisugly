@@ -1,5 +1,4 @@
 import RoboPiLib as RPL
-from setup import RPL
 import post_to_web as PTW
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
