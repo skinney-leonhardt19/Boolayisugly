@@ -7,9 +7,6 @@ import time
 
 RPL.pinMode(17, RPL.INPUT)
 
-motorR == 1
-motorL == 0
-
 while True:
     sensorRead == RPL.digitalRead(17) 
     if sensorRead == 1:
