@@ -7,11 +7,10 @@ import time
 
 RPL.pinMode(17, RPL.INPUT)
 
-while True:
-    sensorRead == RPL.digitalRead(17) 
-    if sensorRead == 1:
+while True: 
+    if RPL.digitalRead(17) == 1:
         RPL.servoWrite(0, 1000)
         RPL.servoWrite(1, 2000)
-    if sensorRead == 0:
+    if RPL.digitalRead(17) == 0:
         RPL.servoWrite(0, 1500)
         RPL.servoWrite(1, 2000)
