@@ -5,7 +5,7 @@ import sys, tty, termios, signal
 
 import time
 
-RPL.pinMode(17, RPL.input)
+RPL.pinMode(17, RPL.INPUT)
 
 motorR == 1
 motorL == 0
