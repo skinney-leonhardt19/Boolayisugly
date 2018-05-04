@@ -12,5 +12,5 @@ while True:
         RPL.servoWrite(0, 2000)
         RPL.servoWrite(1, 1000)
     if RPL.digitalRead(16) == 0:
-        RPL.servoWrite(0, 1000)
+        RPL.servoWrite(0, 1490)
         RPL.servoWrite(1, 2000)
