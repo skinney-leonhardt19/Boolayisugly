@@ -7,20 +7,22 @@ import time
 
 RPL.pinMode(17, RPL.input)
 
-motorR == 1
-motorL == 0
+motorR = 1
+motorL = 0
 
-while True:
+s = 4.8
+
     sensorRead == RPL.digitalRead(17)
-    move == time.time 
-    if sensorRead == 1:
+    while sensorRead == 1:
         RPL.servoWrite(0, 1000)
         RPL.servoWrite(1, 2000)
-    if sensorRead == 0:
-        RPL.servoWrite(0, 1490)
-        RPL.servoWrite(1, 1510)
-    if move == time.time + 3:
-        RPL.servoWrite(0, 0)
-        RPL.servoWrite(1, 0)
+    while sensorRead == 0:
+        sec = time.time()
+        while time.time() < (sec + s)
+            RPL.servoWrite(0, 1490)
+            RPL.servoWrite(1, 1510)
+        while time.time() > (sec + s)
+            RPL.servoWrite(0, 0)
+            RPL.servoWrite(1, 0)
 
     
